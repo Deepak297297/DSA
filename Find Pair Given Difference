@@ -1,0 +1,17 @@
+// gfg solution
+// pair with given difference 
+
+class Solution
+{
+    public boolean findPair(int arr[], int size, int n){
+        
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                if(arr[j]-arr[i]==n && i!=j){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
