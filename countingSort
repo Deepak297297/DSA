@@ -1,0 +1,28 @@
+// gfg solution
+// counting sort
+
+// approach 1
+class Solution{
+    public static String countSort(String arr)
+    {
+        char[] sort = arr.toCharArray();
+        Arrays.sort(sort);
+        return new String(sort);
+        
+    }
+}
+
+
+//approach 2
+class Solution{
+    public static String countSort(String arr)
+    {
+        char[] sort = arr.toCharArray();
+        Arrays.sort(sort);
+        StringBuilder sb = new StringBuilder();
+        for(int i=0;i<sort.length;i++){
+            sb = sb.append(sort[i]);
+        }
+        return sb.toString();
+    }
+}
