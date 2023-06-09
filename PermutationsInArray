@@ -1,0 +1,15 @@
+// gfg solution 
+// searching and sorting
+
+class Solution {
+    public boolean isPossible(long a[], long b[], int n, long k) {
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(a[i]+b[j]>=k){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
